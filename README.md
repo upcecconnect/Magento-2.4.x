@@ -84,25 +84,6 @@
 
 ## How to install
 
-```bash
-cd <your Magento root>
-git clone https://github.com/upcecconnect/magento-pgp.git
-cp -R magento-pgp/app/code/Upc/EcommConnect app/code/Upc/
-```
-
-Then run Magento commands:
-
-```bash
-php bin/magento module:enable Upc_EcommConnect
-php bin/magento setup:upgrade
-php bin/magento setup:di:compile
-php bin/magento cache:clean
-```
-
----
-
-## Alternative installation (without git)
-
 If you don’t have git, you can download this repository as a ZIP archive and manually place the files in your Magento installation.
 
 1. Click **`Code` → `Download ZIP`** on this repository’s GitHub page.
