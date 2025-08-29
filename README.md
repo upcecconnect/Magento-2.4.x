@@ -11,25 +11,6 @@
 
 ## Як встановити модуль
 
-```bash
-cd <корінь вашого Magento>
-git clone https://github.com/upcecconnect/magento-pgp.git
-cp -R magento-pgp/app/code/Upc/EcommConnect app/code/Upc/
-```
-
-Потім виконайте команди Magento:
-
-```bash
-php bin/magento module:enable Upc_EcommConnect
-php bin/magento setup:upgrade
-php bin/magento setup:di:compile
-php bin/magento cache:clean
-```
-
----
-
-## Альтернативний спосіб встановлення (без git)
-
 Якщо у вас немає git, ви можете завантажити цей репозиторій у вигляді ZIP-архіву та вручну розмістити файли у вашій установці Magento.
 
 1. Натисніть кнопку **`Code` → `Download ZIP`** на сторінці GitHub цього репозиторію.
